@@ -27,3 +27,20 @@ Develop a small JS program to manage a list of your courses.
   - Extra: in alphabetical order of acronym
 
 A possible solution: [`courses.js`](courses.js)
+
+## Courses and scores, together
+
+- Using JS objects, merge the two previous exercises, and manage a list of objects that will include information about the exams:
+  - Course Code, Course name, CFU
+  - Attained score (number between 18 and 30, plus a Boolean for the laude)
+  - Date
+- Define a constructor function Exam to create a new object
+- Define a constructor function ExamList, with the following methods: 
+  - add(exam) // pass a fully-constructed Exam object
+  - find(course_code) // returns the matching Exam
+  - afterDate(date) // returns an ExamList with the subset of Exams after the given date
+  - listByDate() // returns an array of Exams, sorted by increasing date
+  - listByScore() // idem, by decreasing score
+  - average() // return the average value
+
+A possible solution: [`transcript.js`](transcript.js)
